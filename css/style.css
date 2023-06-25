@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=DynaPuff&family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Bitter&family=DynaPuff&family=Source+Sans+Pro&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=DynaPuff&family=Kanit:wght@500&family=Source+Sans+Pro&display=swap');
+
+*{
+    margin: 0;padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* font-family: 'Aboreto', cursive;
+font-family: 'DynaPuff', cursive;
+font-family: 'Source Sans Pro', sans-serif; */
+   /* navigation bar  */
+   /* css variables */
+   :root{
+    --navbar-height:59px;
+   }
+#navbar{
+    display:flex;
+    align-items: center;
+     position: sticky; 
+
+ }
+   /* logo and image */
+.logo{
+    margin:10px 34px;
+   }
+.logo img{
+    
+    height: 5vh;
+    margin: 1px 14px;
+
+}
+#navbar::before{
+    content: "";
+    position: absolute;
+    height:100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.55;
+    background-color:black ; 
+    top:0px;
+    left:0px;
+}
+#navbar ul{
+    display: flex; 
+
+}
+#navbar ul li{
+    list-style:none;
+    font-size: 1.0rem;
+font-family: 'Aboreto', cursive;
+font-family: 'DynaPuff', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+}
+#navbar ul li a{
+    color:white;
+    border-radius: 10px;
+    display:block;
+    padding: 0px 30px;
+    border-radius: 20px;
+    text-decoration: none;
+} 
+#navbar ul li a:hover{
+    color:black;
+    background-color:white;
+    /* opacity: 0.55; */
+}
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:435px;
+
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url(../coverpage.jpeg) no-repeat center center/cover;
+    height: 500px;
+    width:100%;
+    z-index:-1;
+    opacity: 0.88;
+    top:0px;
+    left:0px;
+}
+#home h1{
+    color:#ff006a;
+    text-align: center;
+     font-size:2.3rem; 
+    font-family: 'Kanit', sans-serif;
+
+}
+#home p{
+    color:black;
+    text-align: center;
+    font-size: 1.4rem;
+     font-weight: bold; 
+font-family: 'Bitter', serif;
+
+}
+
+.btn{
+    padding: 3px 15px;
+    color: white;
+    font-size: 1.2rem;
+    background-color: #ff006a;
+    margin: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+
+/* services section */
+#services{
+    display:flex; 
+    /* color:black; */
+}
+#servives .box p{
+    font-family: 'DynaPuff', cursive;
+    font-family: 'Aboreto', cursive;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+#services .box{
+    border:2px solid red;
+    padding: 10px 15px;
+    margin: 7px;
+    margin-bottom: 14px;
+    border-radius: 20px;
+    background-color: #efe3e3;
+}
+#services .box img{
+    height:150px;
+    display:block;
+    margin:auto;
+}
+
+
+.center{
+    text-align: center;
+}
+
+/* client section */
+#client-section{
+     height:214px; 
+    position: relative;
+    
+}
+#client-section::before{
+content: "";
+position: absolute;
+/* background: url('/pexels-ella-olsson-1640777.jpg')  ; */
+background-color: #efe3e3;
+height:200px;
+width:100%;
+z-index: -1;
+opacity: 0.88;
+
+}
+
+#clients{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+#clients .client-item{
+    
+    /* padding:10px 15px;
+    height: 100px; */
+    margin: 7px;
+    padding: 0px 0px;
+   }
+#clients img{
+    border-radius: 11px;
+    height: 100px; 
+}
+/* contact section */
+#contact{
+    position: relative;
+}
+#contact-box{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+
+#contact::before{
+    content: "";
+    background: url(/contact1.jpg) no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    opacity: 0.77;
+    position: absolute;
+    z-index: -1;
+}
+
+#contact-box input,#contact-box textarea{
+    font-size: 1.0rem;
+    border-radius: 28px;
+    width: 100%;
+    padding: 0.5rem
+
+
+}
+#contact-box form{
+    width:40%;
+}
+#contact-box label{
+    font-size: 1.5 rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+} 
+.butn{
+    padding: 3px 15px;
+    color: white;
+    font-size: 1.2rem;
+    background-color: #ff006a;
+    margin: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+
+footer{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 9vh;
+    background-color: black;
+    color: white;
+}
+/* .f-center{
+   
+   align-items: center;
+    justify-content: center; 
+background-color: black;
+color:white;
+/* height:15vh; */
+    /* height: 9vh;
+    padding: 0px 297px; */
+
+/* utility classes */
+.h-primary{
+     font-size: 1.7rem; 
+    padding:12px;
+    font-family: 'Kanit', sans-serif;
+    color:#ff006a
+}
+.h-secondary{
+     font-size: 0.7 rem;  
+    padding:12px;
+    font-family: 'Aboreto', cursive;
+font-family: 'DynaPuff', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+}
